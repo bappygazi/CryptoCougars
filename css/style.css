@@ -1,0 +1,377 @@
+/*common part css*/
+* {
+    margin: 0;
+    outline: 0;
+    padding: 0;
+}
+
+img {
+    border: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: #24252D;
+}
+
+/* animation button css */
+.btn-animation {
+    font-family: 'Skranji', cursive;
+    background: linear-gradient(90deg, #2E8100 32.57%, #7BB61A 66.14%, #2E8100 100%);
+    border: solid transparent;
+    border-width: 0 0 4px;
+    transform: translateZ(0);
+    transition: filter .2s;
+    width: 220px;
+}
+
+.btn-animation::after {
+    background-clip: padding-box;
+    background-image: linear-gradient(0deg, #5C9900 0%, #70AF0B 20.71%, #BCFF32 100%);
+    border: solid transparent;
+    border-radius: 50px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.btn-animation:main,
+.btn-animation:focus {
+    user-select: auto;
+}
+
+.btn-animation:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+.btn-animation:disabled {
+    cursor: auto;
+}
+
+/* animation button css */
+
+/* navbar part css */
+.navbar {
+    background-color: #2A2D3A;
+}
+
+.navbar .nav-link {
+    font-family: 'Chivo', sans-serif;
+}
+
+.navbar .btn-connect {
+    height: 50px;
+    font-size: 1.125rem;
+}
+
+/* banner part css */
+#hero {
+    padding-top: 90px;
+}
+
+.banner {
+    padding: 130px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(../images/banner2.jpg);
+}
+
+.newsletter_box {
+    padding: 110px;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.newsletter_box h3 {
+    font-family: 'Skranji', cursive;
+}
+
+.newsletter_box p {
+    font-family: 'Chivo', sans-serif;
+}
+
+.newsletter_box .form-control {
+    font-size: 1.375rem;
+    border: 1px solid #FFFFFF;
+    font-family: 'Chivo', sans-serif;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.newsletter_box .form-control::placeholder {
+    color: #ffffff;
+}
+
+.btn-signUp {
+    height: 65px;
+}
+
+/* amount part css */
+#price-amount {
+    padding: 100px 0;
+}
+
+.price,
+.amount {
+    height: 415px;
+    padding: 0 110px;
+    border-radius: 10px;
+    background-color: #2A2D3A;
+}
+
+.price h4 {
+    font-size: 1.875rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+.price h3 {
+    font-family: 'Skranji', cursive;
+}
+
+.price .progress {
+    height: 25px;
+}
+
+.price .progress-bar {
+    background-color: #6EAF19;
+}
+
+.price .counter-number {
+    color: #6EAF19;
+    font-family: 'Skranji', cursive;
+}
+
+.amount h3 {
+    font-size: 1.875rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+.amount .quantity .form-control {
+    height: 70px;
+    width: 90px;
+    font-size: 1.875rem;
+    font-family: 'Chivo', sans-serif;
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* items part css */
+#items {
+    position: relative;
+}
+
+#items::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: radial-gradient(63.27% 94.73% at 51.03% 96.23%, #497800 0%, #274100 58.65%, #24252D 100%);
+    opacity: 0.2;
+}
+
+#items {
+    padding-bottom: 100px;
+}
+
+.cartoon-item {
+    border-radius: 10px;
+    background-color: #2A2D3A;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    top: 50%;
+    opacity: 1;
+    width: auto;
+    bottom: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    transform: translateY(-50%);
+}
+
+.carousel-control-prev {
+    left: -60px;
+}
+
+.carousel-control-next {
+    right: -60px;
+}
+
+/* road-map part css */
+#road-map {
+    position: relative;
+}
+
+#road-map::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: radial-gradient(63.27% 94.73% at 51.03% 96.23%, #497800 0%, #274100 58.65%, #24252D 100%);
+    opacity: 0.2;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+.section-header h2 {
+    font-family: 'Skranji', cursive;
+}
+
+.roadMap-content .roadMap-counter {
+    z-index: 1;
+    left: -90px;
+    width: 185px;
+    height: 185px;
+    transform: rotate(85deg);
+    background-color: #2A2D3A;
+}
+
+.roadMap-content .roadMap-counter h3 {
+    transform: rotate(275deg);
+    font-family: 'Roboto', sans-serif;
+}
+
+.roadMap-text {
+    border-radius: 15px;
+    background-color: #2A2D3A;
+    padding: 37px 40px 37px 125px;
+}
+
+.roadMap-text::after {
+    top: 10px;
+    left: 18px;
+    width: 100%;
+    height: 98%;
+    z-index: -2;
+    content: "";
+    position: absolute;
+    border-radius: 15px;
+    transform: rotate(1deg);
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.roadMap-text::before {
+    top: 50%;
+    right: -35px;
+    width: 75px;
+    height: 140px;
+    border-radius: 15px;
+    z-index: -1;
+    content: "";
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+/* green */
+.border-green {
+    border: 20px outset #97C25F;
+}
+
+.roadMao-text-green::before {
+    background-color: #97C25F;
+}
+
+/* orange */
+.border-orange {
+    border: 20px outset #FFA13B;
+}
+
+.roadMao-text-orange::before {
+    background-color: #FFA13B;
+}
+
+
+/* red */
+.border-red {
+    border: 20px outset #FF5B4D;
+}
+
+.roadMao-text-red::before {
+    background-color: #FF5B4D;
+}
+
+
+/* purple */
+.border-purple {
+    border: 20px outset #8069FF;
+}
+
+.roadMao-text-purple::before {
+    background-color: #8069FF;
+}
+
+/* skyBlue */
+.border-skyBlue {
+    border: 20px outset #40B9CC;
+}
+
+.roadMao-text-skyBlue::before {
+    background-color: #40B9CC;
+}
+
+.roadMap-text h4 {
+    font-size: 1.875rem;
+    font-family: 'Skranji', cursive;
+}
+
+.roadMap-text p {
+    font-size: 1.375rem;
+    font-family: 'Chivo', sans-serif;
+}
+
+/* creator part css */
+#creators {
+    padding: 90px 0;
+    position: relative;
+}
+
+#creators::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background: radial-gradient(63.27% 94.73% at 51.03% 96.23%, #497800 0%, #274100 58.65%, #24252D 100%);
+}
+
+.creators-content {
+    border-radius: 10px;
+    background-color: #2A2D3A;
+}
+
+.creators-content h5 {
+    font-size: 1.375rem;
+    font-family: 'Skranji', cursive;
+}
+
+/* footer part css */
+#footer {
+    padding: 30px 0;
+    background-color: #2A2D3A;
+}
+
+/* banner part css */
